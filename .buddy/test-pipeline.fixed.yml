@@ -19,5 +19,7 @@
   - action: "Build Docker image"
     type: "DOCKERFILE"
     integration: "Docker_Hub"
+    docker_image_tag: "${BUDDY_EXECUTION_REVISION_SHORT}"
     docker_registry: "DOCKER_HUB"
+    repository: "jiangyang3049/testpy"
     do_not_prune_images: true
